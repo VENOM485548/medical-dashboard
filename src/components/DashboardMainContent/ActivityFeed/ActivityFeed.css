@@ -1,0 +1,59 @@
+.activity-container {
+  margin-top: 0.2rem;
+  padding: 0.5rem;
+  background-color: #f7fafe;
+  border-radius: 25px;
+  width: 100%;
+  max-width: 33.3rem;
+}
+
+.activity-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 0.2rem;
+  margin-left: 0.5rem;
+}
+
+.activity-header h3 {
+  color: #0b0b4c;
+  margin: 0;
+}
+
+.appointments-label {
+  font-size: 0.85rem;   
+  color: #969aa2;
+  margin-right: 0.7rem;
+}
+
+.activity-graph {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-end;
+  padding: 0 2.5rem;
+}
+
+.day-column {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 0.5rem;
+}
+
+.activity-indicator {
+  width: 8px;
+  height: 30px;
+  border-radius: 4px;
+  background-color: #e5e7eb;
+  transition: background-color 0.3s;
+}
+
+.activity-indicator.active {
+  background-color: #3bdbe5;
+  height: 45px;
+}
+
+.day-label {
+  font-size: 0.75rem;
+  color: #969aa2;
+}

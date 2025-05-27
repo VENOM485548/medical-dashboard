@@ -1,0 +1,223 @@
+    .header-container {
+    height: 64px;
+    background-color: #ffffff;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+    margin-left: 15rem;
+    margin-top: 2.3rem;
+    top: 0;
+    left: 0;
+    right: 0;   
+    z-index: 2;
+    }
+
+    .header-left {
+    margin-left: 30px;
+    display: flex;
+    align-items: center;
+    gap: 64px;
+    flex:1;
+    }
+
+    .search-bar {
+    display: flex;
+    align-items: center;
+    padding: 8px 12px;
+    box-shadow: 0 1px 6px rgba(0, 0, 0, 0.1);
+    border-radius: 8px;
+    background-color:white;
+    width: 100%;
+    max-width: 516px;
+    position: relative;
+    }
+
+    .search-bar input {
+    flex: 1;
+    border: none;
+    background: transparent;
+    outline: none;
+    font-size: 14px;
+    margin:0 8px;
+    height: 20px;
+    }
+
+    .search-icon{
+    color: #555;
+    cursor: pointer;
+    }
+
+    .search-bell{
+    color: #2b1c93;
+    fill:#2b1c93;
+    cursor: pointer;
+    }
+
+    .header-right {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    }
+
+    .avatar {
+    width: 40px;
+    height: 40px;
+    background-color: #03e2ea;
+    border-radius: 10px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+    cursor: pointer;
+    }
+
+    .avatar-icon {
+    width: 24px; 
+    height: 24px;
+    }
+
+    .add-user {
+    width: 40px;
+    height: 40px;
+    background-color: #3537aa;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-right: 60px;
+    cursor: pointer;
+    }
+
+    .add-icon {
+    color: white;
+    font-size: 20px;
+    font-weight: bold;
+    }
+
+    .header-right-wrapper {
+    position: relative;
+    height: 100%;
+    display: flex;
+    align-items: center;
+    /* This keeps the icons where they are */
+    z-index: 1;
+    }
+
+    .header-right-wrapper::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      right: 0;
+      left: -34.7rem; 
+      background-color: #f7fafe; 
+      z-index: -1; 
+      pointer-events: none;
+    }   
+
+    /* Tablet */
+    @media (max-width: 1024px) {
+      .header-container {
+        margin-left: 12rem;
+        height: 56px;
+      }
+
+      .search-bar {
+        max-width: 360px;
+        padding: 6px 10px;
+      }
+
+      .search-bar input {
+        font-size: 13px;
+      }
+
+      .add-user, .avatar {
+        width: 36px;
+        height: 36px;
+      }
+
+      .add-icon {
+        font-size: 18px;
+      }
+
+      .avatar-icon {
+        width: 20px;
+        height: 20px;
+      }
+
+      .header-right-wrapper::before {
+        left: auto;
+        right: 0;
+        width: 100%;
+        background-color: transparent; 
+      }
+    }
+
+    /* Mobile */
+    @media (max-width: 768px) {
+      .header-container {
+        flex-direction: column;
+        align-items: flex-start;
+        height: auto;
+        margin-left: 0;
+        margin-top: 0;
+        padding: 10px 16px;
+        position: static;
+      }
+
+      .header-left {
+        width: 100%;
+        margin-left: 0;
+        gap: 12px;
+      }
+
+      .search-bar {
+        width: 100%;
+        max-width: none;
+        margin-top: 8px;
+      }
+
+      .header-right-wrapper {
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 10px;
+      }
+
+      .header-right {
+        gap: 8px;
+      }
+
+      .header-right-wrapper::before {
+        left: 0;
+        background-color: transparent; 
+      }
+
+      .add-user, .avatar {
+        width: 32px;
+        height: 32px;
+      }
+
+      .add-icon {
+        font-size: 16px;
+      }
+
+      .header-right-wrapper::before {
+        left: 0;
+      }
+    }
+    
+    @media (max-width: 1024px) {
+      .header-right-wrapper::before {
+        left: 0;
+        right: 0;
+        background-color: transparent;
+      }
+    }
+
+    @media (min-width: 1025px) {
+      .header-right-wrapper::before {
+        left: -34.7rem;
+        background-color: #f7fafe;
+      }
+    }

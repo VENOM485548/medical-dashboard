@@ -1,0 +1,18 @@
+@font-face {
+  font-family: 'Nunito';
+  src: url('../styles/fonts/Nunito-Regular.ttf') format('truetype');
+  font-weight: normal;
+  font-style: normal;
+}
+
+:root {
+  --font-family-base: 'Nunito', sans-serif;
+  --color-font-muted:#969aa2;
+  --color-icon-muted:#969aa2;
+  --color-section-title-muted:#969aa2;
+}
+
+body {
+  margin: 0;
+  font-family: var(--font-family-base);
+}

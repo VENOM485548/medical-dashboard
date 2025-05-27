@@ -1,0 +1,169 @@
+.calender-header {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin-top: 5.5rem;
+}
+
+.month {
+  color: #1f2937;
+  margin-left: 0.9rem;
+  font-size: large;
+}
+
+.title-selector {
+  color: #2b1c93;
+  display: flex;
+  align-items: center;
+  font-size: small;
+  gap: 0.3rem;
+}
+
+.right   {
+  color: #2b1c93;
+  margin-right: 3.5rem;
+  cursor: pointer;
+}
+
+.left {
+    color: #2b1c93;
+    margin-right: 0.5rem;
+    cursor: pointer;
+}
+
+.calendar-week-container {
+  border-radius: 25px;
+  padding: 0.75rem;
+  width: 100%;
+  height: 34.1vh;
+  margin-top: -0.5rem;
+  margin-right: 0.7rem;
+  background-color: #f7fafe;
+}
+
+.calendar-week-row {
+  display: flex;
+  justify-content: space-between;
+  gap: 1rem;
+  margin-right: 1rem;
+}
+
+.calendar-day-column {
+  flex: 1;
+  background-color: #edf3ff;
+  border-radius: 25px;
+  padding: 0.75rem 0.9rem;
+  text-align: center;
+}
+
+.day-label {
+  margin-bottom: 0.5rem;
+}
+
+.day-name {
+  display: block;
+  font-weight: 600;
+  font-size: 0.7rem;
+  color: #1f2937;
+}
+
+.day-date {
+  font-size: 1rem;
+  color: #1f2937;
+  font-weight: bold;
+}
+
+.day-times {
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.appointment-time {
+  color: #1f2937;
+  padding: 0.25rem 0.5rem;
+  font-size: 0.7rem;
+  font-weight: 600;
+  cursor: pointer;
+}
+
+.highlighted-time {
+  background-color: #3436a6;
+  border-radius: 10px;
+  color: white;
+  padding: 0.2rem;
+}
+.highlighteds-time {
+  background-color: #acafd4;
+  border-radius: 10px;
+  color: white;
+  padding: 0.2rem;
+}
+
+.appointment-details-section {
+  display: flex;
+  gap: 1rem;
+  margin-top: 2rem;
+}
+
+.appointment-cards {
+  background-color: #f7fafe;
+  border-radius: 25px;
+  padding: 1rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  margin-top: -1rem;
+}
+
+.forty-percent {
+  width: 25%;
+}
+
+.sixty-percent {
+  width: 53%;
+}
+
+.appointment-cards h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.appointment-cards p {
+  margin: 0.3rem 0;
+  font-size: small;
+}
+
+.appointment-cards span {
+  font-size: 0.8rem;
+}
+
+.card-header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.card-header h4 {
+  margin: 0;
+  font-size: 1rem;
+}
+
+.card-icon {
+  width: 24px;
+  height: 24px;
+  object-fit: contain;
+}
+
+.card-one {
+  background-color: #3635a9;
+  color: white;
+  margin-left: 1.5rem;
+  cursor: pointer;
+}
+
+.card-two {
+  background-color: #dde2f9;
+  cursor: pointer; 
+}

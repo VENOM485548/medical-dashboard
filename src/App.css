@@ -1,0 +1,9 @@
+@import url('https://fonts.googleapis.com/css?family=Nunito');
+.container {
+    font-family: Nunito, sans-serif;
+    display: grid;
+    width: 99%;
+    margin: 0 auto;
+    gap: 1.8rem;
+    grid-template-columns: 14rem auto ;
+}
